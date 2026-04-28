@@ -1,0 +1,16 @@
+{
+  "LOGIN": {
+    "TITULO": "Login",
+    "BOTAO": "Sign in",
+    "TESTE": "It worked in English"
+  },
+
+  "HOME": {
+    "ECOSSISTEMA": "ECOSYSTEM",
+    "PARCEIROS": "PARTNERS",
+    "CENTRO-DE-INOVACAO": "INNOVATION CENTER",
+    "EVENTOS": "EVENTS",
+    "NOTICIAS": "NEWS",
+    "FALE-CONOSCO": "CONTACT US"
+  }
+}

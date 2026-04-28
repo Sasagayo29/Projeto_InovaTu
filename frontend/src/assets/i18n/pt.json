@@ -1,0 +1,16 @@
+{
+  "LOGIN": {
+    "TITULO": "Entrar",
+    "BOTAO": "Acessar",
+    "TESTE": "Funcionou em português"
+  },
+  "HOME": {
+  "ECOSSISTEMA": "ECOSSISTEMA",
+  "PARCEIROS": "PARCEIROS",
+  "CENTRO-DE-INOVACAO": "CENTRO DE INOVAÇÃO",
+  "EVENTOS": "EVENTOS",
+  "NOTICIAS": "NOTÍCIAS",
+  "FALE-CONOSCO": "FALE CONOSCO"
+}
+
+}
