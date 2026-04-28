@@ -1,0 +1,314 @@
+2026-01-21T21:33:05.698Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Starting InovatuApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by ? in /app)
+2026-01-21T21:33:05.763Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-21T21:33:08.668Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-21T21:33:08.933Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 234 ms. Found 11 JPA repository interfaces.
+2026-01-21T21:33:10.393Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-21T21:33:10.444Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-21T21:33:10.446Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-01-21T21:33:10.582Z  INFO 1 --- [inovatu] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-21T21:33:10.586Z  INFO 1 --- [inovatu] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4584 ms
+2026-01-21T21:33:11.768Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-21T21:33:12.793Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54326e9
+2026-01-21T21:33:12.798Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-21T21:33:12.948Z  INFO 1 --- [inovatu] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://db:3306/inovatu_db?useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true (MySQL 8.0)
+2026-01-21T21:33:13.131Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.106s)
+2026-01-21T21:33:13.166Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `inovatu_db`: 1
+2026-01-21T21:33:13.178Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Schema `inovatu_db` is up to date. No migration necessary.
+2026-01-21T21:33:13.420Z  INFO 1 --- [inovatu] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-21T21:33:13.576Z  INFO 1 --- [inovatu] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-01-21T21:33:13.666Z  INFO 1 --- [inovatu] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-21T21:33:14.335Z  INFO 1 --- [inovatu] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-21T21:33:14.477Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-21T21:33:14.480Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-21T21:33:14.510Z  INFO 1 --- [inovatu] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-21T21:33:17.471Z  INFO 1 --- [inovatu] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-21T21:33:17.622Z  INFO 1 --- [inovatu] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T21:33:18.419Z  INFO 1 --- [inovatu] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name jpaUserDetailsService
+2026-01-21T21:33:18.511Z  INFO 1 --- [inovatu] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-21T21:33:20.543Z  WARN 1 --- [inovatu] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-21T21:33:22.301Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-01-21T21:33:22.377Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Started InovatuApplication in 17.992 seconds (process running for 19.389)
+2026-01-21T21:33:22.886Z  INFO 1 --- [inovatu] [main] br.com.inovatu.config.DataSeeder         : Usuário administrador já existe. Nenhuma ação necessária.
+2026-01-21T21:35:21.103Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-21T21:35:21.105Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-21T21:35:21.110Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-01-21T21:38:03.212Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-21T21:38:03.217Z  INFO 1 --- [inovatu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-01-21T21:38:03.233Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T21:38:03.238Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-21T21:38:03.244Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-21T21:42:47.913Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Starting InovatuApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by ? in /app)
+2026-01-21T21:42:47.921Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-21T21:42:51.202Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-21T21:42:51.413Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 183 ms. Found 11 JPA repository interfaces.
+2026-01-21T21:42:53.003Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-21T21:42:53.046Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-21T21:42:53.050Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-01-21T21:42:53.155Z  INFO 1 --- [inovatu] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-21T21:42:53.157Z  INFO 1 --- [inovatu] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4980 ms
+2026-01-21T21:42:53.736Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-21T21:42:54.273Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10e9a5fe
+2026-01-21T21:42:54.285Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-21T21:42:54.417Z  INFO 1 --- [inovatu] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://db:3306/inovatu_db?useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true (MySQL 8.0)
+2026-01-21T21:42:54.568Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.086s)
+2026-01-21T21:42:54.620Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `inovatu_db`: 1
+2026-01-21T21:42:54.635Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Schema `inovatu_db` is up to date. No migration necessary.
+2026-01-21T21:42:54.855Z  INFO 1 --- [inovatu] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-21T21:42:55.054Z  INFO 1 --- [inovatu] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-01-21T21:42:55.225Z  INFO 1 --- [inovatu] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-21T21:42:56.005Z  INFO 1 --- [inovatu] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-21T21:42:56.103Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-21T21:42:56.106Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-21T21:42:56.137Z  INFO 1 --- [inovatu] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-21T21:42:58.667Z  INFO 1 --- [inovatu] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-21T21:42:58.840Z  INFO 1 --- [inovatu] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T21:42:59.593Z  INFO 1 --- [inovatu] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name jpaUserDetailsService
+2026-01-21T21:42:59.745Z  INFO 1 --- [inovatu] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-21T21:43:01.810Z  WARN 1 --- [inovatu] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-21T21:43:03.008Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-01-21T21:43:03.043Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Started InovatuApplication in 16.755 seconds (process running for 18.272)
+2026-01-21T21:43:03.312Z  INFO 1 --- [inovatu] [main] br.com.inovatu.config.DataSeeder         : Usuário administrador já existe. Nenhuma ação necessária.
+2026-01-21T21:43:09.360Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-21T21:43:09.366Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-21T21:43:09.370Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-01-21T21:48:16.808Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-21T21:48:16.837Z  INFO 1 --- [inovatu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-01-21T21:48:16.884Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T21:48:16.913Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-21T21:48:16.941Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-21T21:48:23.868Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Starting InovatuApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by ? in /app)
+2026-01-21T21:48:23.910Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-21T21:48:27.235Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-21T21:48:27.448Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 195 ms. Found 11 JPA repository interfaces.
+2026-01-21T21:48:29.248Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-21T21:48:29.287Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-21T21:48:29.289Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-01-21T21:48:29.377Z  INFO 1 --- [inovatu] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-21T21:48:29.379Z  INFO 1 --- [inovatu] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5246 ms
+2026-01-21T21:48:29.979Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-21T21:48:30.464Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4975dda1
+2026-01-21T21:48:30.468Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-21T21:48:30.580Z  INFO 1 --- [inovatu] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://db:3306/inovatu_db?useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true (MySQL 8.0)
+2026-01-21T21:48:30.728Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.095s)
+2026-01-21T21:48:30.769Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `inovatu_db`: 1
+2026-01-21T21:48:30.778Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Schema `inovatu_db` is up to date. No migration necessary.
+2026-01-21T21:48:31.066Z  INFO 1 --- [inovatu] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-21T21:48:31.342Z  INFO 1 --- [inovatu] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-01-21T21:48:31.461Z  INFO 1 --- [inovatu] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-21T21:48:32.158Z  INFO 1 --- [inovatu] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-21T21:48:32.282Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-21T21:48:32.285Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-21T21:48:32.320Z  INFO 1 --- [inovatu] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-21T21:48:35.079Z  INFO 1 --- [inovatu] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-21T21:48:35.216Z  INFO 1 --- [inovatu] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T21:48:36.544Z  INFO 1 --- [inovatu] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name jpaUserDetailsService
+2026-01-21T21:48:36.648Z  INFO 1 --- [inovatu] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-21T21:48:39.620Z  WARN 1 --- [inovatu] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-21T21:48:41.293Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-01-21T21:48:41.341Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Started InovatuApplication in 19.395 seconds (process running for 20.893)
+2026-01-21T21:48:41.724Z  INFO 1 --- [inovatu] [main] br.com.inovatu.config.DataSeeder         : Usuário administrador já existe. Nenhuma ação necessária.
+2026-01-21T21:50:03.792Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-21T21:50:03.795Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-21T21:50:03.802Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-01-21T22:24:55.724Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-21T22:24:55.758Z  INFO 1 --- [inovatu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-01-21T22:24:55.799Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T22:24:55.844Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-21T22:24:55.864Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-21T22:24:59.184Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Starting InovatuApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by ? in /app)
+2026-01-21T22:24:59.186Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-21T22:25:00.439Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-21T22:25:00.535Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 11 JPA repository interfaces.
+2026-01-21T22:25:01.190Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-21T22:25:01.207Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-21T22:25:01.208Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-01-21T22:25:01.243Z  INFO 1 --- [inovatu] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-21T22:25:01.244Z  INFO 1 --- [inovatu] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1970 ms
+2026-01-21T22:25:01.482Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-21T22:25:01.813Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4975dda1
+2026-01-21T22:25:01.817Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-21T22:25:01.880Z  INFO 1 --- [inovatu] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://db:3306/inovatu_db?useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true (MySQL 8.0)
+2026-01-21T22:25:01.955Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.040s)
+2026-01-21T22:25:01.972Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `inovatu_db`: 1
+2026-01-21T22:25:01.977Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Schema `inovatu_db` is up to date. No migration necessary.
+2026-01-21T22:25:02.074Z  INFO 1 --- [inovatu] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-21T22:25:02.174Z  INFO 1 --- [inovatu] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-01-21T22:25:02.230Z  INFO 1 --- [inovatu] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-21T22:25:02.684Z  INFO 1 --- [inovatu] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-21T22:25:02.775Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-21T22:25:02.777Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-21T22:25:02.793Z  INFO 1 --- [inovatu] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-21T22:25:04.185Z  INFO 1 --- [inovatu] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-21T22:25:04.286Z  INFO 1 --- [inovatu] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T22:25:04.745Z  INFO 1 --- [inovatu] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name jpaUserDetailsService
+2026-01-21T22:25:04.797Z  INFO 1 --- [inovatu] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-21T22:25:05.989Z  WARN 1 --- [inovatu] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-21T22:25:06.785Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-01-21T22:25:06.816Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Started InovatuApplication in 8.328 seconds (process running for 9.342)
+2026-01-21T22:25:07.057Z  INFO 1 --- [inovatu] [main] br.com.inovatu.config.DataSeeder         : Usuário administrador já existe. Nenhuma ação necessária.
+2026-01-21T22:25:50.093Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-21T22:25:50.106Z  INFO 1 --- [inovatu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-01-21T22:25:50.114Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T22:25:50.120Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-21T22:25:50.145Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-21T22:25:53.186Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Starting InovatuApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by ? in /app)
+2026-01-21T22:25:53.189Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-21T22:25:54.641Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-21T22:25:54.732Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 11 JPA repository interfaces.
+2026-01-21T22:25:55.381Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-21T22:25:55.397Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-21T22:25:55.398Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-01-21T22:25:55.425Z  INFO 1 --- [inovatu] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-21T22:25:55.426Z  INFO 1 --- [inovatu] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2137 ms
+2026-01-21T22:25:55.641Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-21T22:25:55.826Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ed18d80
+2026-01-21T22:25:55.829Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-21T22:25:55.876Z  INFO 1 --- [inovatu] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://db:3306/inovatu_db?useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true (MySQL 8.0)
+2026-01-21T22:25:55.931Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.032s)
+2026-01-21T22:25:55.950Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `inovatu_db`: 1
+2026-01-21T22:25:55.958Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Schema `inovatu_db` is up to date. No migration necessary.
+2026-01-21T22:25:56.056Z  INFO 1 --- [inovatu] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-21T22:25:56.126Z  INFO 1 --- [inovatu] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-01-21T22:25:56.182Z  INFO 1 --- [inovatu] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-21T22:25:56.504Z  INFO 1 --- [inovatu] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-21T22:25:56.551Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-21T22:25:56.553Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-21T22:25:56.564Z  INFO 1 --- [inovatu] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-21T22:25:57.521Z  INFO 1 --- [inovatu] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-21T22:25:57.591Z  INFO 1 --- [inovatu] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T22:25:57.982Z  INFO 1 --- [inovatu] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name jpaUserDetailsService
+2026-01-21T22:25:58.026Z  INFO 1 --- [inovatu] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-21T22:25:59.232Z  WARN 1 --- [inovatu] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-21T22:25:59.783Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-01-21T22:25:59.798Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Started InovatuApplication in 7.352 seconds (process running for 8.041)
+2026-01-21T22:25:59.951Z  INFO 1 --- [inovatu] [main] br.com.inovatu.config.DataSeeder         : Usuário administrador já existe. Nenhuma ação necessária.
+2026-01-21T22:30:56.705Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-21T22:30:56.706Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-21T22:30:56.709Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-21T22:33:31.453Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-21T22:33:31.461Z  INFO 1 --- [inovatu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-01-21T22:33:31.471Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T22:33:31.476Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-21T22:33:31.485Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-21T22:34:15.007Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Starting InovatuApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by ? in /app)
+2026-01-21T22:34:15.010Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-21T22:34:16.300Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-21T22:34:16.421Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 11 JPA repository interfaces.
+2026-01-21T22:34:17.110Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-21T22:34:17.130Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-21T22:34:17.131Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-01-21T22:34:17.163Z  INFO 1 --- [inovatu] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-21T22:34:17.164Z  INFO 1 --- [inovatu] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2056 ms
+2026-01-21T22:34:17.374Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-21T22:34:17.577Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@388be5fd
+2026-01-21T22:34:17.579Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-21T22:34:17.630Z  INFO 1 --- [inovatu] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://db:3306/inovatu_db?useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true (MySQL 8.0)
+2026-01-21T22:34:17.700Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.036s)
+2026-01-21T22:34:17.713Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `inovatu_db`: 1
+2026-01-21T22:34:17.719Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Schema `inovatu_db` is up to date. No migration necessary.
+2026-01-21T22:34:17.809Z  INFO 1 --- [inovatu] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-21T22:34:17.865Z  INFO 1 --- [inovatu] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-01-21T22:34:17.898Z  INFO 1 --- [inovatu] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-21T22:34:18.117Z  INFO 1 --- [inovatu] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-21T22:34:18.166Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-21T22:34:18.182Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-21T22:34:18.193Z  INFO 1 --- [inovatu] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-21T22:34:19.118Z  INFO 1 --- [inovatu] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-21T22:34:19.178Z  INFO 1 --- [inovatu] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T22:34:19.505Z  INFO 1 --- [inovatu] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name jpaUserDetailsService
+2026-01-21T22:34:19.541Z  INFO 1 --- [inovatu] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-21T22:34:20.402Z  WARN 1 --- [inovatu] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-21T22:34:21.129Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-01-21T22:34:21.162Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Started InovatuApplication in 6.745 seconds (process running for 7.35)
+2026-01-21T22:34:21.336Z  INFO 1 --- [inovatu] [main] br.com.inovatu.config.DataSeeder         : Usuário administrador já existe. Nenhuma ação necessária.
+2026-01-21T22:38:13.674Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-21T22:38:13.675Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-21T22:38:13.679Z  INFO 1 --- [inovatu] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-01-21T22:40:32.520Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-21T22:40:32.525Z  INFO 1 --- [inovatu] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-01-21T22:40:32.534Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T22:40:32.539Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-21T22:40:32.545Z  INFO 1 --- [inovatu] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-21T22:41:22.371Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Starting InovatuApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by ? in /app)
+2026-01-21T22:41:22.374Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-21T22:41:23.401Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-21T22:41:23.492Z  INFO 1 --- [inovatu] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 11 JPA repository interfaces.
+2026-01-21T22:41:24.037Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-21T22:41:24.051Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-21T22:41:24.051Z  INFO 1 --- [inovatu] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-01-21T22:41:24.075Z  INFO 1 --- [inovatu] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-21T22:41:24.076Z  INFO 1 --- [inovatu] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1617 ms
+2026-01-21T22:41:24.288Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-21T22:41:24.509Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@167a21b
+2026-01-21T22:41:24.511Z  INFO 1 --- [inovatu] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-21T22:41:24.563Z  INFO 1 --- [inovatu] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://db:3306/inovatu_db?useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true (MySQL 8.0)
+2026-01-21T22:41:24.623Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.037s)
+2026-01-21T22:41:24.638Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `inovatu_db`: 1
+2026-01-21T22:41:24.642Z  INFO 1 --- [inovatu] [main] o.f.core.internal.command.DbMigrate      : Schema `inovatu_db` is up to date. No migration necessary.
+2026-01-21T22:41:24.730Z  INFO 1 --- [inovatu] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-21T22:41:24.775Z  INFO 1 --- [inovatu] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-01-21T22:41:24.807Z  INFO 1 --- [inovatu] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-21T22:41:25.062Z  INFO 1 --- [inovatu] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-21T22:41:25.107Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-21T22:41:25.109Z  WARN 1 --- [inovatu] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-21T22:41:25.120Z  INFO 1 --- [inovatu] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-21T22:41:26.080Z  INFO 1 --- [inovatu] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-21T22:41:26.139Z  INFO 1 --- [inovatu] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21T22:41:26.447Z  INFO 1 --- [inovatu] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name jpaUserDetailsService
+2026-01-21T22:41:26.483Z  INFO 1 --- [inovatu] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-21T22:41:27.425Z  WARN 1 --- [inovatu] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-21T22:41:27.959Z  INFO 1 --- [inovatu] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-01-21T22:41:27.975Z  INFO 1 --- [inovatu] [main] br.com.inovatu.InovatuApplication        : Started InovatuApplication in 6.106 seconds (process running for 6.696)
+2026-01-21T22:41:28.145Z  INFO 1 --- [inovatu] [main] br.com.inovatu.config.DataSeeder         : Usuário administrador já existe. Nenhuma ação necessária.
+2026-01-21T22:42:58.038Z  INFO 1 --- [inovatu] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-21T22:42:58.039Z  INFO 1 --- [inovatu] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-21T22:42:58.043Z  INFO 1 --- [inovatu] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
